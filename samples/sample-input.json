@@ -1,0 +1,21 @@
+{
+  "product": {
+    "repository": "image-grid-transparent-crop-tool",
+    "title": "画像グリッド配置・透過クロップツール"
+  },
+  "items": [
+    {
+      "id": "image-grid-transparent-crop-tool-happy",
+      "title": "画像グリッド配置・透過クロップツール happy",
+      "status": "ready",
+      "tags": [
+        "webapp"
+      ],
+      "imagePath": "samples/happy.png",
+      "gridSpec": "4x4",
+      "cropArea": "0,0,512,512",
+      "owner": "closed-alpha",
+      "transparentMargin": "画像グリッド配置・透過クロップツール の確認観点"
+    }
+  ]
+}

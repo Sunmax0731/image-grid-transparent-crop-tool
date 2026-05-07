@@ -1,0 +1,32 @@
+{
+  "repository": "image-grid-transparent-crop-tool",
+  "title": "画像グリッド配置・透過クロップツール",
+  "domain": "WebApp",
+  "hostApp": null,
+  "rank": 74,
+  "tier": "P2",
+  "ideaNo": 12,
+  "overview": "複数画像を読み込み、列数、行数、上下左右の余白、書き出し先の画像サイズを指定してグリッド上に配置する。余白、列幅、行高はハンドルで個別調整でき、ドラッグで固定アスペクト比のクロップ範囲を作り、透過情報を保ったままPNGやWebPへ書き出す。",
+  "problem": "画像一覧、素材シート、サムネイル、UIパーツを作る時に、グリッド配置、余白調整、固定比率クロップ、透過保持が別々の作業になりやすい。",
+  "differentiation": "グリッド書き出しと透過クロップを1つの専用UIにまとめ、各列・行・余白を直接ハンドルで調整できる。",
+  "publish": "GitHub Pages / GitHub Release",
+  "surface": "Static WebApp + CLI validation core",
+  "entity": "grid crop job",
+  "requiredFields": [
+    "id",
+    "title",
+    "imagePath",
+    "gridSpec",
+    "cropArea",
+    "owner"
+  ],
+  "warningField": "transparentMargin",
+  "qcdsManualTestCap": "S-",
+  "qcdsTarget": "A-",
+  "benchmarkRepos": [
+    "Sunmax0731/project-portfolio-generator",
+    "Sunmax0731/release-output-check-flow",
+    "Sunmax0731/movie-telop-transcriber",
+    "Sunmax0731/codex-remote-android"
+  ]
+}
