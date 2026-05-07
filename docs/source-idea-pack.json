@@ -1,0 +1,66 @@
+{
+  "rank": 74,
+  "domain": "WebApp",
+  "ideaNo": 12,
+  "ideaName": "画像グリッド配置・透過クロップツール",
+  "repository": "image-grid-transparent-crop-tool",
+  "publish": "GitHub Pages / GitHub Release",
+  "createdIdeaLookup": {
+    "exactPathFirst": "D:/AI/WebApp/created_idea_012_image-grid-transparent-crop-tool",
+    "exactPathExists": true,
+    "fallbackSearched": false,
+    "fallbackResults": [],
+    "notes": "完全一致の created_idea と ZIP を使用した。"
+  },
+  "zipLookup": {
+    "exactZip": "D:/AI/WebApp/created_idea_012_image-grid-transparent-crop-tool/idea_012_image-grid-transparent-crop-tool.zip",
+    "exactZipExists": true,
+    "requiredFiles": [
+      "metadata.json",
+      "README.md",
+      "01_REQUIREMENTS.md",
+      "02_SPECIFICATION.md",
+      "03_DESIGN.md",
+      "04_IMPLEMENTATION_PLAN.md",
+      "05_TEST_PLAN.md",
+      "06_RELEASE_CHECKLIST.md"
+    ],
+    "missingRequiredFiles": []
+  },
+  "zipMetadata": {
+    "domain": "WebApp",
+    "no": 12,
+    "platform": "WebApp",
+    "field": "画像レイアウト・書き出し",
+    "integration": "",
+    "idea": "画像グリッド配置・透過クロップツール",
+    "overview": "複数画像を読み込み、列数、行数、上下左右の余白、書き出し先の画像サイズを指定してグリッド上に配置する。余白、列幅、行高はハンドルで個別調整でき、ドラッグで固定アスペクト比のクロップ範囲を作り、透過情報を保ったままPNGやWebPへ書き出す。",
+    "problem": "画像一覧、素材シート、サムネイル、UIパーツを作る時に、グリッド配置、余白調整、固定比率クロップ、透過保持が別々の作業になりやすい。",
+    "similar": "Photoshop, Figma, Canva, ImageMagick montage, TexturePacker",
+    "diff": "グリッド書き出しと透過クロップを1つの専用UIにまとめ、各列・行・余白を直接ハンドルで調整できる。",
+    "parent": "Apps",
+    "startPromptFile": "START_PROMPT.md",
+    "documents": [
+      "START_PROMPT.md",
+      "README.md",
+      "01_REQUIREMENTS.md",
+      "02_SPECIFICATION.md",
+      "03_DESIGN.md",
+      "04_IMPLEMENTATION_PLAN.md",
+      "05_TEST_PLAN.md",
+      "06_RELEASE_CHECKLIST.md",
+      "metadata.json"
+    ],
+    "repositoryName": "image-grid-transparent-crop-tool",
+    "repositoryTitle": "image-grid-transparent-crop-tool",
+    "zipFile": "idea_012_image-grid-transparent-crop-tool.zip"
+  },
+  "metadataRepositoryMatches": true,
+  "metadataZipMatches": true,
+  "initialRepositoryReadme": {
+    "existedBeforeCreation": false,
+    "note": "正式 repo が存在しなかったため README.md は存在しないと記録し、domain docs と created_idea ZIP を根拠に作成した。"
+  },
+  "mojibakePolicy": "ZIP本文や既存Markdownは丸写しせず、PICKUP行、metadata、domain docsから正式docsを再構成する。",
+  "unstableEvidencePolicy": "ZIPサイズ、生成時刻、絶対一時パスはQCDS固定根拠に使わない。"
+}

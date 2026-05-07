@@ -1,0 +1,120 @@
+[
+  {
+    "id": "happy-path",
+    "purpose": "画像グリッド配置・透過クロップツール の正常入力を検証する",
+    "items": [
+      {
+        "id": "image-grid-transparent-crop-tool-happy",
+        "title": "画像グリッド配置・透過クロップツール happy",
+        "status": "ready",
+        "tags": [
+          "webapp"
+        ],
+        "imagePath": "samples/happy.png",
+        "gridSpec": "4x4",
+        "cropArea": "0,0,512,512",
+        "owner": "closed-alpha",
+        "transparentMargin": "画像グリッド配置・透過クロップツール の確認観点"
+      }
+    ],
+    "expected": {
+      "result": "passed",
+      "errors": 0,
+      "warnings": 0
+    }
+  },
+  {
+    "id": "missing-required",
+    "purpose": "必須項目不足を error として検出する",
+    "items": [
+      {
+        "id": "image-grid-transparent-crop-tool-missing",
+        "status": "ready",
+        "tags": [
+          "webapp"
+        ],
+        "imagePath": "samples/missing.png",
+        "gridSpec": "4x4",
+        "cropArea": "0,0,512,512",
+        "owner": "closed-alpha",
+        "transparentMargin": "画像グリッド配置・透過クロップツール の確認観点"
+      }
+    ],
+    "expected": {
+      "result": "failed",
+      "errors": 1,
+      "warnings": 0
+    }
+  },
+  {
+    "id": "warning",
+    "purpose": "推奨項目不足を warning として検出する",
+    "items": [
+      {
+        "id": "image-grid-transparent-crop-tool-warning",
+        "title": "画像グリッド配置・透過クロップツール warning",
+        "status": "ready",
+        "tags": [
+          "webapp"
+        ],
+        "imagePath": "samples/warning.png",
+        "gridSpec": "4x4",
+        "cropArea": "0,0,512,512",
+        "owner": "closed-alpha"
+      }
+    ],
+    "expected": {
+      "result": "warning",
+      "errors": 0,
+      "warnings": 1
+    }
+  },
+  {
+    "id": "mixed-batch",
+    "purpose": "正常、必須不足、警告を同一バッチで集計する",
+    "items": [
+      {
+        "id": "image-grid-transparent-crop-tool-happy",
+        "title": "画像グリッド配置・透過クロップツール happy",
+        "status": "ready",
+        "tags": [
+          "webapp"
+        ],
+        "imagePath": "samples/happy.png",
+        "gridSpec": "4x4",
+        "cropArea": "0,0,512,512",
+        "owner": "closed-alpha",
+        "transparentMargin": "画像グリッド配置・透過クロップツール の確認観点"
+      },
+      {
+        "id": "image-grid-transparent-crop-tool-missing",
+        "status": "ready",
+        "tags": [
+          "webapp"
+        ],
+        "imagePath": "samples/missing.png",
+        "gridSpec": "4x4",
+        "cropArea": "0,0,512,512",
+        "owner": "closed-alpha",
+        "transparentMargin": "画像グリッド配置・透過クロップツール の確認観点"
+      },
+      {
+        "id": "image-grid-transparent-crop-tool-warning",
+        "title": "画像グリッド配置・透過クロップツール warning",
+        "status": "ready",
+        "tags": [
+          "webapp"
+        ],
+        "imagePath": "samples/warning.png",
+        "gridSpec": "4x4",
+        "cropArea": "0,0,512,512",
+        "owner": "closed-alpha"
+      }
+    ],
+    "expected": {
+      "result": "failed",
+      "errors": 1,
+      "warnings": 1
+    }
+  }
+]
