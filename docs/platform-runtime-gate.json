@@ -1,0 +1,13 @@
+{
+  "product": "image-grid-transparent-crop-tool",
+  "title": "画像グリッド配置・透過クロップツール",
+  "domain": "WebApp",
+  "ideaNo": 12,
+  "platformType": "browser-web",
+  "expectedPublicTarget": "GitHub Pages / GitHub Release",
+  "browser": {
+    "evidence": "dist/web-smoke-result.json"
+  },
+  "android": null,
+  "evidence": "dist/platform-runtime-gate-result.json"
+}
